@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Augustus";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Augustus.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gotham_Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/Vollkorn-Regular.otf") format("opentype");
+}
+
+h1 {
+  font-family: "Augustus";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  margin-left: -12px;
+}
+
+
+.cell {
+  height: 8px;
+  width: 8px;
+  margin: 1px;
+}
+
+.cell-filled {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.cell-empty {
+  border: 1px solid black;
+}
+.spacing-cell {
+  border: none;
+  margin: 0;
+}
+
+.calendar-row {
+  display: flex;
+}
+
+#calendar-wrapper {
+  display: flex;
+}
+
+.hide {
+  display: none !important;
+}
+
+#memento-mori-life-calendar,
+#input-birthday-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calendar-legend {
+  margin-left: 5px;
+
+}
+#calendar-legend > div {
+  display: flex;
+}
+
+.cell-calendar-legend {
+  margin: 1px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+  font-size: 14px;
+  font-family: "Vollkorn";
+}
+
+#error-birthday {
+  margin-top: 16px;
+}
+
+.quote-wrapper {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.quote {
+  font-family: "Vollkorn";
+  font-size: 15px;
+  color: #394042;
+  max-width: 625px;
+}
+
+.author {
+  margin-top: 12px;
+  font-family: "Gotham Book";
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #394042;
+  text-transform: uppercase;
+}
+
+#input-birthday-wrapper > div {
+  margin-top: 16px;
+}
+
+@media (max-height: 1220px) {
+  .cell {
+    height: 5px;
+    width: 5px;
+    margin: 1px 1px;
+  }
+
+  .memento-mori-life-calendar {
+    max-width: 465px;
+  }
+
+  .cell-calendar-legend {
+    font-size: 11px;
+  }
+}

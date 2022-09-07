@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: #f1f1f1;
+
+      }
+      .container {
+        width: 200px;
+        height: 70px;
+        padding: 8px;
+        /* display: flex; */
+      }
+
+      .popup-title {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .container > *:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      button {
+        /* height: 30px;
+        width: 30px; */
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="popup-title">Memento Mori Life Calendar</div>
+        <div>
+          <div>Want to adjust your birthday?</div>
+        </div>
+        <button id="changeDate">Click here</button>
+      </div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>

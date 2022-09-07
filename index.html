@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Memento Mori Life Calendar</title>
+    <script src="moment.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./images/icon16.png">
+  </head>
+  <body>
+    <div class="page">
+      <div id="input-birthday-wrapper" class="hide">
+        <div>
+          In order to view the calendar you have to provide your birthday.
+        </div>
+        <div>
+            <input id="input-birthday" type="date" />
+            <button id="submit-birthday">Submit</button>
+        </div>
+      </div>
+      <div id="error-birthday"></div>
+      <div id="memento-mori-life-calendar" class="hide">
+        <h1>MEMENTO MORI</h1>
+        <div id="calendar-wrapper"></div>
+        <div class="quote-wrapper">
+          <div class="quote">
+            It is not that we have a short time to live, but that we waste a lot of it.
+            Life is long enough, and a sufficiently generous amount has been given to us for the highest achievements if it were all well invested.
+          </div>
+          <div class="author">Seneca</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
