@@ -16,7 +16,7 @@ function renderCalendar() {
   document.getElementById("memento-mori-life-calendar").classList.remove("hide");
 
   const currentDate = moment();
-  const birthday = moment(birthdayStr);
+  const birthday = moment(birthdayStr).utc().format()
   if (birthday >= currentDate) {
     document.getElementById("memento-mori-life-calendar").classList.add("hide");
     showError(
@@ -40,10 +40,10 @@ function submitBirthday() {
     showError("Invalid Birthday. No Date provided.");
     return;
   }
-  const current = new Date();
-  const birthday = new Date(
+  const current = moment();
+  const birthday = moment(
     document.getElementById("input-birthday").valueAsNumber
-  );
+  ).utc().format();
   if (birthday > current) {
     showError("Invalid Birthday");
     return;
