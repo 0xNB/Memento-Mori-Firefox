@@ -1,6 +1,6 @@
 {
   "name": "Memento Mori Life Calendar",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "The calendar was designed as a tool to help you harness the concept of Memento Mori by visualizing your life week by week.",
   "manifest_version": 3,
   "chrome_url_overrides": {
