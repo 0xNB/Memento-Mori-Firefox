@@ -9,10 +9,12 @@ Startup page for firefox that acts as a life calender. Stop wasting time by gett
 > 
 > Seneca
 
-# Preview 
+<hr/>
 
-![mementomori](https://user-images.githubusercontent.com/14185207/210417877-d0046f13-1881-483b-814c-36806312f565.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/14185207/210417877-d0046f13-1881-483b-814c-36806312f565.png" width="600"/>
+</p>
 
-# Building 
+<hr/>
 
 Currently the build is only meant for local development. However we want to extend this to precompilation in the future.
